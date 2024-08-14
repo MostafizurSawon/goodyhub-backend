@@ -4,6 +4,8 @@
 
 ## Frontend Live: https://goodyhub.netlify.app/
 
+## Frontend Github: https://github.com/MostafizurSawon/goodyhub-frontend
+
 Short Description: This backend application is made with Django Rest Framework. 
 
     "products-list": "http://goodyhub-backend.onrender.com/products/products-list/",
@@ -22,3 +24,5 @@ A logged in user can add new category and products. They can also edit/delete th
 # To run this project in local server, clone this repository and run this command:
 - pip install -r requirements.txt
 - py manage.py runserver
+
+** Enviroment should be activated
