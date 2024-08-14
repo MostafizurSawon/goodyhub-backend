@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from rest_framework import viewsets, generics
-from . import models, serializers
+from rest_framework import viewsets
+from . import serializers
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.contrib.auth.tokens import default_token_generator
@@ -39,8 +38,7 @@ class UserRegistrationApiView(APIView):
             user = serializer.save()
             token = default_token_generator.make_token(user)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
-            # confirm_link = f"https://gardenhub-django.onrender.com/user/active/{uid}/{token}"
-            confirm_link = f"http://127.0.0.1:8000/user/active/{uid}/{token}"
+            confirm_link = f"https://goodyhub-backend.onrender.com/user/active/{uid}/{token}"
             email_subject = "Confirm Your Email"
             email_body = render_to_string('confirm_email.html', {'confirm_link': confirm_link})
             
