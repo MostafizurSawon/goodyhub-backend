@@ -26,3 +26,13 @@ A logged in user can add new category and products. They can also edit/delete th
 - py manage.py runserver
 
 ** Enviroment should be activated
+
+Users:
+User: admin
+pass: 123
+
+User: sawon01
+pass: sawon1234
+
+User: sawon02
+pass: sawon1234
