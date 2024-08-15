@@ -30,11 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://goodyhub.netlify.app/']
+CSRF_TRUSTED_ORIGINS = ['https://goodyhub.netlify.app']
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    'https://goodyhub.netlify.app/',
+    'https://goodyhub.netlify.app',
 ]
 
 
